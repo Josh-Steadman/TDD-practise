@@ -1,3 +1,7 @@
 def array_product(array)
-    array[0].max * array[1].max
+    max_num = []
+    product = 1
+    array.each { |arr| max_num << arr.max }
+    max_num. each { |num| product *= num }
+    product
 end
